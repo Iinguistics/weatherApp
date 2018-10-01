@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel = "stylesheet" href= "weatherApp.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch|Poor+Story" rel="stylesheet">
+    <title>WeatherApp</title>
+  </head>
+  <body>
+    
+ 
+      <nav class = "nav-container"  id = "myTopNav">
+         <li class= "brand-active fa fa-sun">Feather Weather</li>
+         <li class = "Major Cities"><a href = "#major-head">Major Cities</a></li>
+         <li class = "Major Cities"><a href = "#aboutMe">About Me</a></li>
+         <a class="gr" href = "https://grindreel.com/"target = "_blank" ><img src="https://image.ibb.co/c2u77U/lol_wtf.jpg" alt="lol_wtf" border="0">best site on the web</a>
+         </nav>
+         
+
+  
+         <div class = "search">
+           <h3>Search for a city</h3>
+         <input id = "userCity" placeholder="Show me the weather"><button type="button" class="btn btn-outline-info" id = "submitWeather">Submit</button>
+         <p id = "error"></p> <h3 id = "show"></h3>
+         </div>
+         <!--Parallax scrolling effect-->
+         <div class = "container-fluid">
+             <div class = "hotThot"></div></div>
+             <h3 id = "major-head">Major Cities from around the world</h3>
+             <div class = "major">
+               <div class = "england"><img class = "img-fluid" id = "nc"  src="https://image.ibb.co/cOGjMp/england_is_my.jpg" alt="england_is_my" border="0">
+                <a href = "#sarahJessicaParkerIsAHorse" class = "england-city-plus"><h2>England </h2></a><a href = "#england-city" class = "england-city-minus" style = "display:none;"><h2> England -</h2></a>
+                <div class="england-after" style="display:none;">
+                 </div>
+               </div>
+               <div class = "mexico-city"><iframe id = "mx" src="https://giphy.com/embed/ohnNygJZhtN60" width="480" height="480"   allowFullScreen></iframe>
+                <a href = "#sarahJessicaParkerIsAHorse" class = "mexico-city-plus"><h2>Mexico City </h2></a><a href = "#mx" class = "mexico-city-minus" style = "display:none;"><h2> Mexico City -</h2></a>
+                <div class="mexico-after" style="display:none;">
+                 </div>
+                </div>
+            <div class = "sanFrancisco-city"><img class = "img-fluid" id = "sf" src="https://image.ibb.co/bOWhrp/san_fran.jpg">
+              <a href = "#sarahJessicaParkerIsAHorse" class = "san-fran-city-plus"><h2>San Francisco </h2></a><a href = "#sf" class = "sanFran-city-minus" style = "display:none;"><h2> San Francisco -</h2></a>
+              <div class="sanFrancisco-after" style="display:none;">
+              </div>
+          </div>
+        </div>
+        <div class ="major">
+          <div class = "tokyo-city"><img class = "img-fluid" id = "tk" src="https://image.ibb.co/hHnaSU/asia_japan_japanese_590478.jpg">
+            <a href = "#sarahJessicaParkerIsAHorse" class = "tokyo-city-plus"><h2>Tokyo </h2></a><a href = "#tk" class = "tokyo-city-minus" style = "display:none;"><h2> Tokyo -</h2></a>
+            <div class="tokyo-after" style="display:none;">
+             </div>
+            </div>
+      <div class = "salt-lake-city"><iframe id = "sl" src="https://giphy.com/embed/3oKGzjOiv9yBlkDFrG" width="480" height="480" allowFullScreen></iframe>
+        <a href = "#sarahJessicaParkerIsAHorse" class = "salt-lake-city-plus"><h2>Salt Lake City </h2></a><a href = "#sl" class = "salt-lake-city-minus" style = "display:none;"><h2> Salt Lake City -</h2></a>
+        <div class="saltLake-after" style="display:none;">
+         </div>
+       </div>
+       <div class = "new-york-city"><img class = "img-fluid" id="ny" src="https://image.ibb.co/ghuz49/bridge_brooklyn_bridge_buildings_534757.jpg">
+        <a href = "#sarahJessicaParkerIsAHorse" class = "new-york-city-plus"><h2>New York </h2></a><a href = "#ny" class = "new-york-city-minus" style = "display:none;"><h2> New York -</h2></a>
+        <div class="newYork-after" style="display:none;">
+       </div>
+    </div>
+      </div>
+      <div class ="major">
+        <div class = "mumbai-city"><iframe id = "mb" src="https://giphy.com/embed/JacU9iqaJIUPm" width="480" height="480" allowFullScreen></iframe>
+          <a href = "#sarahJessicaParkerIsAHorse" class = "mumbai-city-plus"><h2>Mumbai </h2></a><a href = "#ny" class = "mumbai-minus" style = "display:none;"><h2> Mumbai -</h2></a>
+          <div class="mumbai-after" style="display:none;">
+         </div>
+      </div>
+      <div class = "moscow-city"><iframe id = "mc" src="https://giphy.com/embed/xT8qBmamiB4mFbSu4M" width="480" height="480" allowFullScreen></iframe>
+        <a href = "#sarahJessicaParkerIsAHorse" class = "moscow-city-plus"><h2>Moscow </h2></a><a href = "#mc" class = "moscow-city-minus" style = "display:none;"><h2> Moscow -</h2></a>
+        <div class="moscow-after" style="display:none;">
+         </div>
+       </div>
+       <div class = "chicago-city"><img class = "img-fluid" id = "cc" src="https://image.ibb.co/mFGgZ9/aeroplane_airplane_architecture_56590.jpg">
+        <a href = "#sarahJessicaParkerIsAHorse" class = "chicago-city-plus"><h2>Chicago </h2></a><a href = "#cc" class = "chicago-city-minus" style = "display:none;"><h2> Chicago -</h2></a>
+        <div class="chicago-after" style="display:none;">                   
+        </div>
+      </div> 
+      </div>
+       <!--Parallax scrolling effect-->
+       <div class = "container-fluid">
+        <div class = "hotThot2"></div></div>
+        <div class = "gif">
+          <h3>When you think the community project is a giphy api, then realize it's a weather api</h3>
+          <iframe id = "kirsten" src="https://giphy.com/embed/UDK1bEGGtsbM4"  width="480" height="480" allowFullScreen></iframe>
+          <h3>done searching for weather? Go ahead & search for some gifs!!!</h3>
+          <input type ="text" placeholder="Search Gifs" id = "gifSearch"><button type="button" id="gifBtn" class="btn btn-outline-secondary">Submit</button>
+        </div>
+        <div class = "main-gif-container"></div>
+        <div class = "weatherFoot">
+          <h5 id = "aboutMe">Hi, I'm James...I am a self taught
+            <span class = "txt-type" data-wait="2500" data-words= '["Developer","Engineer", "Creator"]'></span>
+            </h5>
+            </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="weatherApp.js"></script>
+  </body>
+</html>
