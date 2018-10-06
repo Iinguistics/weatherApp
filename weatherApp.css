@@ -4,81 +4,7 @@ body{
     text-align: center !important;
     font-family: 'Poor Story', cursive !important;
 }
-.mainWrap{
-    background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("https://image.ibb.co/nhoL99/black_and_white_blurred_background_creepy_1362371.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    opacity: 0.9;
-    font-family: 'Source Code Pro', monospace !important;
-}
 
-.riddle{
-    color: #E50914;
-
-}
-#pass-test{
-    padding-top:20%;
-    width:55%;
-    margin: auto;
-    font-weight: bold;
-    line-height: 1.7;
-    font-size: 30px;
-}
-.pass{
-    padding-right: 5px;
-    padding-top: 10%;
-}
-.pass h4{
-    font-size: 18px;
-}
-.passInput{
-    
-    font-weight: bold;
-}
-
-.free-pass{
- width: 60%;
- text-align: center;
- margin: auto;
- font-weight: bold;
-}
-
- /* keyframes for rotating animation */
- @-webkit-keyframes spin{
-    from { transform: rotateY(0); }
-    to   { transform: rotateY(360deg); }
-    }
-
-#pass-validation-granted h5{
-    color: green;
-    padding-top:1px;
-}
- #pass-validation-denied h5{
-    color:#E50914;
- 
-}
-.landing-page-head{
-     background-image: url("https://image.ibb.co/diq7Sp/abstract_art_colorful_942317.jpg");
-     min-height:950px;
-     position: relative;
-     opacity: 0.50;
-     background-position: center;
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-attachment: fixed;
- }
-          
- .redirect{
-     padding-bottom: 8px;
- }
- 
  .btn:hover {
 background-position: right center;
 }
@@ -97,122 +23,9 @@ border-radius: 10px;
 }
 .btn-3{
     background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
-
-}
-.free-pass{
-    font-size: 25px;
-    font-weight: bold;
 }
 
 
-/* scene wrapper */
-.wrapper{
-height: 350px;
-margin-top:50px;
-position:relative;
-perspective: 800;
-perspective-origin: 50% 100px;
-text-transform: uppercase;
-}
-
-/* cube wrapper */
-.cube{
-position: relative;
-margin: 0 auto;
-width: 550px;
-transform-style: preserve-3d;
-animation: spin 4s infinite linear;
-transition: all 1s linear;
-}
-
-/* outer cube */
-b{
-position:absolute;
-width:500px;
-height:500px;
-display:block;
-background:rgba(255,255,255,0.1);
-box-shadow:inset 0 0 60px rgba(0,0,0,0.2);
-font-size:25px;
-text-align:center;
-line-height:400px;
-color:rgba(0,0,0,0.5);
-font-family:sans-serif;
-text-transform:uppercase;
-transition: all 1s linear;
-}
-b.back{
-transform: translateZ(-100px) rotateY(180deg);
-}
-b.right{
-transform:rotateY(-270deg) translateX(100px);
-transform-origin: top right;
-}
-b.left{
-transform:rotateY(270deg) translateX(-100px);
-transform-origin: center left;
-}
-b.top{
-transform:rotateX(-90deg) translateY(-100px);
-transform-origin: top center;
-}
-b.bottom{
-transform:rotateX(90deg) translateY(100px);
-transform-origin: bottom center;
-}
-b.front{
-transform: translateZ(100px);
-}
-
-/* inner cube */
-i{
-position:absolute;
-top:50px;
-left:50px;
-width:450px;
-height:450px;
-display:block;
-background:url("https://image.ibb.co/eWbJPp/flukegf_lol.jpg");
-transition: all 1s linear;
-}
-i.front{
-transform: translateZ(50px);
-}
-i.back{
-transform: translateZ(-50px) rotateY(180deg);
-}
-i.bottom{
-transform:rotateX(-90deg) translateY(50px);
-transform-origin: left bottom;
-}
-i.left{
-transform:rotateY(270deg) translateX(-50px);
-transform-origin: center left;
-}
-i.right{
-transform:rotateY(-270deg) translateX(50px);
-transform-origin: top right;
-}
-i.top{
-transform:rotateX(-270deg) translateY(-50px);
-transform-origin: left top;
-}
-
-/* hover transformations */
-.cube:hover{
-top:400px;
-}
-.cube:hover b.top{
-transform: translateZ(100px) rotateX(-210deg);
-transform-origin: top center;
-}
-.cube:hover i{
-top:-200px;
-}
-
-.left, .front, .back, .right{
-  color:#E50914;
-}
 
 
  @media(max-width:568px){
@@ -314,13 +127,6 @@ top:-200px;
     color:#3F729B; 
     
 }
-/* Do not need...
-.england{
-    justify-content: center;
-    padding: 25px;
-    align-items: center;
-    justify-content:space-between;
-}*/
 
 #nc{
     border-radius: 10px;
