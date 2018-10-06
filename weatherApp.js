@@ -161,61 +161,7 @@ function show(data){
  }
     });
        
-    
-        
-
-// Click Submit Button  Landing Page
-$('.passButton').click(function(e){
-    var userPassInput = $('.passInput').val();
-    if(userPassInput === "phlebotomist"){
-         $('#pass-validation-granted').append('<h5>'+"Access Granted"+'<br>'+"....Redirecting"+'</h5>');
-    $('.passInput').val(''); 
-    setTimeout(function(){location.href = "weatherApp.html"}, 2000);
-    
-  }else{
-
-    $('#pass-validation-denied').append('<h5>'+"Password Denied"+'</h5>');
-    $('.passInput').val(''); 
-    $('h5').fadeOut(5000);
-
-  }
-    });
-    
-    // Press Enter
-    $('.passInput').on('keypress', function(e){
-        var userPassInput = $(this).val();
-        if(e.which === 13 && userPassInput === "phlebotomist"){
-           
-            $('#pass-validation-granted').append('<h5>'+"Access Granted"+'<br>'+"....Redirecting"+'</h5>');
-            $('.passInput').val(''); 
-            setTimeout(function(){location.href = "weatherApp.html"}, 2000);
-        }else if(e.which === 13 && userPassInput != "phlebotomist"){
-
-            $('#pass-validation-denied').append('<h5>'+"Password Denied"+'</h5>');
-            $('.passInput').val(''); 
-            $("h5").fadeOut(5000);
-        
-          }
-            }); 
-        
-
-// spinning cube..snarf snarf
-$(".wrapper").hide(); 
-var map = {16: false, 74: false, 75: false};
-$("*").keydown(function(e) {
-    if (e.keyCode in map) {
-        map[e.keyCode] = true;
-        if (map[16] && map[74] && map[75]) {
-           $(".wrapper").show();
-        }
-    }
-})
-.keyup(function(e) {
-    if (e.keyCode in map) {
-        map[e.keyCode] = false;
-    }
-  });
-
+          
 //Major Cites Weather
 $('.england-city-plus').click(function(){
    $(this).hide();
@@ -511,21 +457,5 @@ function init(){
 // Init TypeWriter
 new TypeWriter(txtElement,words,wait);
 }
-// ------------------------------------------------------------------------------------------------------------------------------
-// the ES6 way create a class & constructor
-/*
-class TypeWriter {
-    constructor(txtElement, words, wait = 3000){
-        this.txtElement = txtElement;
-        this.words = words;
-        this.txt = '';
-        this.wordIndex = 0;
-        this.wait = parseInt(wait, 10);
-        this.type();
-        this.isDeleting= false;
-    }
 
-    type(){
 
-    }
-}*/
