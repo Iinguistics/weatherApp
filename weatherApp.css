@@ -1,10 +1,69 @@
-/*font-family: 'Lobster', cursive;
-font-family: 'Poor Story', cursive;*/
+
 body{
     text-align: center !important;
     font-family: 'Poor Story', cursive !important;
 }
+.mainWrap{
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://image.ibb.co/nhoL99/black_and_white_blurred_background_creepy_1362371.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.9;
+    font-family: 'Source Code Pro', monospace !important;
+}
 
+
+
+.pass{
+    padding-right: 5px;
+    padding-top: 10%;
+}
+.pass h4{
+    font-size: 18px;
+}
+.passInput{
+    
+    font-weight: bold;
+}
+
+.free-pass{
+ width: 60%;
+ text-align: center;
+ margin: auto;
+ font-weight: bold;
+}
+
+
+
+#pass-validation-granted h5{
+    color: green;
+    padding-top:1px;
+}
+ #pass-validation-denied h5{
+    color:#E50914;
+ 
+}
+.landing-page-head{
+     background-image: url("https://image.ibb.co/diq7Sp/abstract_art_colorful_942317.jpg");
+     min-height:950px;
+     position: relative;
+     opacity: 0.50;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+ }
+          
+ .redirect{
+     padding-bottom: 8px;
+ }
+ 
  .btn:hover {
 background-position: right center;
 }
@@ -23,7 +82,25 @@ border-radius: 10px;
 }
 .btn-3{
     background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+
 }
+.free-pass{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+/* scene wrapper */
+.wrapper{
+height: 350px;
+margin-top:50px;
+position:relative;
+perspective: 800;
+perspective-origin: 50% 100px;
+text-transform: uppercase;
+}
+
+
 
 
 
@@ -36,10 +113,12 @@ border-radius: 10px;
         background-attachment: scroll !important;
       }
     }
+
 #repo{
     padding-top: 50px;
     padding-left: 1000px;
 }
+
 
 /*main page*/
 .nav-container{
@@ -84,12 +163,12 @@ border-radius: 10px;
      .brand-active:hover{
         color:#E50914 !important;
     }
-    
-     .gr img{
-         height: 45px;
+
+     .search-city-gif{
+        border-radius: 10px;
      }
 
-     .hotThot{
+     .img1{
         background-image: url("https://image.ibb.co/bHys7U/back_view_backlit_city_847483.jpg");
         min-height: 400px;
         position: relative;
@@ -106,11 +185,14 @@ border-radius: 10px;
     padding-top: 50px;
     
 }
+.search-city-gif{
+    padding-bottom: 15px;
+}
 #show{
     color: #3F729B; 
 }
 
-  #major-head{ /* LOL thats what she said */
+  #major-head{ 
     text-transform: uppercase;
     color:#E32934;
     padding: 35px;
@@ -127,6 +209,13 @@ border-radius: 10px;
     color:#3F729B; 
     
 }
+/* Do not need...
+.england{
+    justify-content: center;
+    padding: 25px;
+    align-items: center;
+    justify-content:space-between;
+}*/
 
 #nc{
     border-radius: 10px;
@@ -182,7 +271,6 @@ border-radius: 10px;
     height: auto;
     opacity:0.8;
     width: 350px;
-    background: linear-gradient(to bottom, #66ccff 0%, #ff0000 100%);
 }
 #mx{
     border-radius: 10px;
@@ -193,7 +281,7 @@ border-radius: 10px;
 }
 
 
-.hotThot2{
+.img2{
     background-image: url("https://image.ibb.co/dcHKnU/adult_autumn_beauty_268791.jpg");
     min-height: 400px;
     position: relative;
@@ -230,16 +318,3 @@ border-radius: 10px;
     width: 425px;
 }
 
-.weatherFoot{
-    display: block;
-    height:100px;
-    background-color:#CCD6DD;
-    margin:auto;
-    padding:35px;
-    font-family: 'Chakra Petch', sans-serif;
-}
-
-/*Cursor*/
-.txt-type > .txt {
-    border-right: 0.2rem solid #777;
-}
