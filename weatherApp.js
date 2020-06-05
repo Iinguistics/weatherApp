@@ -9,7 +9,7 @@ $('#submitWeather').click(function(){
         }else{
             $('#error').hide();
         $.ajax({
-            url: "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
+            url: "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
             type:"GET",
             dataType: "jsonp",
             success: function(data){
@@ -29,7 +29,7 @@ $('#submitWeather').click(function(){
     function searchGiphy() {
 
 
-        var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=" + city + "&api_key=OH5PDKM3ho3LxKUoOM1bofJI3Rrl8UPb&limit=30");
+        var xhr = $.get("https://api.giphy.com/v1/gifs/search?q=" + city + "&api_key=OH5PDKM3ho3LxKUoOM1bofJI3Rrl8UPb&limit=30");
 
         xhr.done(function (response) {
             var gifs = response.data[0];
@@ -64,7 +64,7 @@ $('#submitWeather').click(function(){
             $('#error').hide();
             var la = "los angeles"
             $.ajax({
-                url: "http://api.openweathermap.org/data/2.5/weather?q=" + la + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
+                url: "https://api.openweathermap.org/data/2.5/weather?q=" + la + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
             type:"GET",
             dataType: "jsonp",
             success: function(data){
@@ -75,7 +75,7 @@ $('#submitWeather').click(function(){
         });
     }else{
     $.ajax({
-            url: "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
+            url: "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
             type:"GET",
             dataType: "jsonp",
             success: function(data){
@@ -105,7 +105,7 @@ function show(data){
             $('#error').hide();
          var city = $('#userCity').val();
         $.ajax({
-            url: "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
+            url: "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
             type:"GET",
             dataType: "jsonp",
             success: function(data){
@@ -123,7 +123,7 @@ function show(data){
         "<h3><strong>Wind Speed</strong>: " + data.wind.speed + "</h3>" ;
     }
     function searchGiphy() {
-        var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=" + city + "&api_key=OH5PDKM3ho3LxKUoOM1bofJI3Rrl8UPb&limit=30");
+        var xhr = $.get("https://api.giphy.com/v1/gifs/search?q=" + city + "&api_key=OH5PDKM3ho3LxKUoOM1bofJI3Rrl8UPb&limit=30");
 
         xhr.done(function (response) {
             console.log("It is working & Sarah smells like old provolone", response);
@@ -150,7 +150,7 @@ function show(data){
              if(city == "la"){
                  var la = "los angeles"
             $.ajax({
-                url: "http://api.openweathermap.org/data/2.5/weather?q=" + la + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
+                url: "https://api.openweathermap.org/data/2.5/weather?q=" + la + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
                 type:"GET",
                 dataType: "jsonp",
                 success: function(data){
@@ -171,7 +171,7 @@ function show(data){
       }else if(e.which === 13){
         var city = $('#userCity').val();
        $.ajax({
-           url: "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
+           url: "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
            type:"GET",
            dataType: "jsonp",
            success: function(data){
@@ -253,7 +253,7 @@ $('.england-city-plus').click(function(){
    $('.england-after').fadeIn(900);
       var englandCity = "london";
        $.ajax({
-            url: "http://api.openweathermap.org/data/2.5/weather?q=" + englandCity + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
+            url: "https://api.openweathermap.org/data/2.5/weather?q=" + englandCity + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
             type:"GET",
             dataType: "jsonp",
             success: function(data){
@@ -276,7 +276,7 @@ $('.england-city-plus').click(function(){
         $('.chicago-after').fadeIn(900);
            var chicagoCity = "chicago";
             $.ajax({
-                 url: "http://api.openweathermap.org/data/2.5/weather?q=" + chicagoCity + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
+                 url: "https://api.openweathermap.org/data/2.5/weather?q=" + chicagoCity + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
                  type:"GET",
                  dataType: "jsonp",
                  success: function(data){
@@ -299,7 +299,7 @@ $('.england-city-plus').click(function(){
             $('.sanFrancisco-after').fadeIn(900);
                var sanFranCity = "san francisco";
                 $.ajax({
-                     url: "http://api.openweathermap.org/data/2.5/weather?q=" + sanFranCity + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
+                     url: "https://api.openweathermap.org/data/2.5/weather?q=" + sanFranCity + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
                      type:"GET",
                      dataType: "jsonp",
                      success: function(data){
@@ -322,7 +322,7 @@ $('.england-city-plus').click(function(){
                 $('.newYork-after').fadeIn(900);
                    var newYorkCity = "new york";
                     $.ajax({
-                         url: "http://api.openweathermap.org/data/2.5/weather?q=" + newYorkCity + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
+                         url: "https://api.openweathermap.org/data/2.5/weather?q=" + newYorkCity + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
                          type:"GET",
                          dataType: "jsonp",
                          success: function(data){
@@ -345,7 +345,7 @@ $('.england-city-plus').click(function(){
                     $('.saltLake-after').fadeIn(900);
                        var saltCity = "salt lake city";
                         $.ajax({
-                             url: "http://api.openweathermap.org/data/2.5/weather?q=" + saltCity + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
+                             url: "https://api.openweathermap.org/data/2.5/weather?q=" + saltCity + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
                              type:"GET",
                              dataType: "jsonp",
                              success: function(data){
@@ -368,7 +368,7 @@ $('.england-city-plus').click(function(){
                         $('.tokyo-after').fadeIn(900);
                            var tokyoCity = "tokyo";
                             $.ajax({
-                                 url: "http://api.openweathermap.org/data/2.5/weather?q=" + tokyoCity + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
+                                 url: "https://api.openweathermap.org/data/2.5/weather?q=" + tokyoCity + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
                                  type:"GET",
                                  dataType: "jsonp",
                                  success: function(data){
@@ -391,7 +391,7 @@ $('.england-city-plus').click(function(){
                             $('.mumbai-after').fadeIn(900);
                                var mumbaiCity = "mumbai";
                                 $.ajax({
-                                     url: "http://api.openweathermap.org/data/2.5/weather?q=" + mumbaiCity + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
+                                     url: "https://api.openweathermap.org/data/2.5/weather?q=" + mumbaiCity + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
                                      type:"GET",
                                      dataType: "jsonp",
                                      success: function(data){
@@ -414,7 +414,7 @@ $('.england-city-plus').click(function(){
                                 $('.moscow-after').fadeIn(900);
                                    var moscowCity = "moscow";
                                     $.ajax({
-                                         url: "http://api.openweathermap.org/data/2.5/weather?q=" + moscowCity + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
+                                         url: "https://api.openweathermap.org/data/2.5/weather?q=" + moscowCity + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
                                          type:"GET",
                                          dataType: "jsonp",
                                          success: function(data){
@@ -437,7 +437,7 @@ $('.england-city-plus').click(function(){
                                     $('.mexico-after').fadeIn(900);
                                        var mexCity = "mexico city";
                                         $.ajax({
-                                             url: "http://api.openweathermap.org/data/2.5/weather?q=" + mexCity + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
+                                             url: "https://api.openweathermap.org/data/2.5/weather?q=" + mexCity + "&units=imperial" + "&APPID=caa56179220f8c539f1268b7d8779d7f",
                                              type:"GET",
                                              dataType: "jsonp",
                                              success: function(data){
@@ -457,7 +457,7 @@ $('.england-city-plus').click(function(){
 function searchGiphy(){
     var userInput = $("#gifSearch").val();
     
-    var xhr = $.get("http://api.giphy.com/v1/gifs/search?q="+userInput+"&api_key=OH5PDKM3ho3LxKUoOM1bofJI3Rrl8UPb&limit=30");
+    var xhr = $.get("https://api.giphy.com/v1/gifs/search?q="+userInput+"&api_key=OH5PDKM3ho3LxKUoOM1bofJI3Rrl8UPb&limit=30");
     
     xhr.done(function(response){
         console.log("It is working & Sarah smells like old provolone",response);
