@@ -3,67 +3,8 @@ body{
     text-align: center !important;
     font-family: 'Poor Story', cursive !important;
 }
-.mainWrap{
-    background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("https://image.ibb.co/nhoL99/black_and_white_blurred_background_creepy_1362371.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    opacity: 0.9;
-    font-family: 'Source Code Pro', monospace !important;
-}
 
 
-
-.pass{
-    padding-right: 5px;
-    padding-top: 10%;
-}
-.pass h4{
-    font-size: 18px;
-}
-.passInput{
-    
-    font-weight: bold;
-}
-
-.free-pass{
- width: 60%;
- text-align: center;
- margin: auto;
- font-weight: bold;
-}
-
-
-
-#pass-validation-granted h5{
-    color: green;
-    padding-top:1px;
-}
- #pass-validation-denied h5{
-    color:#E50914;
- 
-}
-.landing-page-head{
-     background-image: url("https://image.ibb.co/diq7Sp/abstract_art_colorful_942317.jpg");
-     min-height:950px;
-     position: relative;
-     opacity: 0.50;
-     background-position: center;
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-attachment: fixed;
- }
-          
- .redirect{
-     padding-bottom: 8px;
- }
- 
  .btn:hover {
 background-position: right center;
 }
@@ -106,10 +47,10 @@ text-transform: uppercase;
 
 
  @media(max-width:568px){
-     .hotThot{
+     .img1{
          background-attachment: scroll !important;
       }
-     .hotThot2{
+     .img2{
         background-attachment: scroll !important;
       }
     }
